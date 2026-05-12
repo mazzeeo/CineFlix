@@ -202,11 +202,221 @@ button:hover{
     max-width: 200px;
 }
 
-/* Responsivo adicional para favoritos */
+/* FAVORITOS */
+
+#favoritos-section {
+    padding: 40px;
+    text-align: center;
+}
+
+#favoritos-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#lista-favoritos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Responsivo Tablet */
 @media(max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .banner {
+        height: 350px;
+    }
+
+    .login h2 {
+        font-size: 28px;
+    }
+
+    .login input {
+        width: 250px;
+        padding: 12px;
+    }
+
+    .card {
+        width: 220px;
+    }
+
+    .card img {
+        height: 290px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
     .favorito-item {
         width: 45%;
         max-width: 200px;
+    }
+
+    .favorito-item img {
+        height: 180px;
+    }
+
+    .favorito-item h4 {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .modal-content {
+        width: 85%;
+        max-width: 350px;
+        margin: 20% auto;
+    }
+
+    .modal-content h2 {
+        font-size: 22px;
+    }
+}
+
+/* Responsivo Celular */
+@media(max-width: 480px) {
+    header {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 12px;
+        flex: 1;
+        min-width: 80px;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .login {
+        padding: 40px 15px;
+    }
+
+    .login h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .login input {
+        width: 90%;
+        max-width: 300px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .filmes {
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .card button {
+        padding: 10px 15px;
+        font-size: 12px;
+        width: 90%;
+    }
+
+    #favoritos-section {
+        padding: 20px 10px;
+    }
+
+    #lista-favoritos {
+        gap: 10px;
+    }
+
+    .favorito-item {
+        width: calc(50% - 5px);
+        max-width: 150px;
+    }
+
+    .favorito-item img {
+        height: 150px;
+    }
+
+    .favorito-item h4 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .favorito-item button {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 300px;
+        margin: 30% auto;
+        padding: 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 18px;
+    }
+
+    .modal-content label {
+        font-size: 12px;
+    }
+
+    .modal-content input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .close {
+        font-size: 24px;
+    }
+
+    .close-favoritos {
+        font-size: 24px;
+    }
+
+    #voltar {
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }
 
