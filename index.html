@@ -1,79 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineFlix</title>
+
+    <title>JOVI Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="Style/style.css">
 
-
+    <script src="https://kit.fontawesome.com/7c0a3c635c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
 
-        <h1>CineFlix</h1>
-
-        <div class="header-actions">
-            <button id="favoritos">Favoritos</button>
-            <button id="voltar" style="display: none;">Voltar</button>
-            <button id="login">Login</button>
-            <button id="tema">Tema</button>
+        <div class="logo">
+            <h1>JOVI <span>TECH</span></h1>
         </div>
 
+        <nav>
+            <a href="#">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <button class="login-topo">
+            <i class="fa-regular fa-user"></i>
+            Login
+        </button>
+
     </header>
-    
+
+
     <section class="banner">
 
-        <img id="slide" src="https://picsum.photos/id/1018/1200/400">
+        <div class="texto-banner">
+
+            <p>TECNOLOGIA QUE CONECTA</p>
+
+            <h2>
+                Bem-vindo à <br>
+                JOVI <span>Tech</span>
+            </h2>
+
+            <h3>
+                Descubra produtos inovadores com qualidade,
+                desempenho e design premium.
+            </h3>
+
+            <button>
+                Conheça nossos produtos
+            </button>
+
+        </div>
+
+        <div class="imagem-banner">
+            <img id="slide" src="img/banner1.png">
+        </div>
 
     </section>
+
+
+    <section class="titulo-produtos">
+        <h2>Nossos Produtos</h2>
+    </section>
+
+
+    <section class="produtos" id="produtos">
+
+        <div class="card">
+
+            <img src="img/celular.png">
+
+            <h3>JOVI Phone X</h3>
+
+            <p>R$ 2.999,00</p>
+
+            <button class="comprar">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Comprar
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="img/fone.png">
+
+            <h3>JOVI Airbuds</h3>
+
+            <p>R$ 499,00</p>
+
+            <button class="comprar">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Comprar
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="img/relogio.png">
+
+            <h3>JOVI Watch</h3>
+
+            <p>R$ 899,00</p>
+
+            <button class="comprar">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Comprar
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="img/notebook.png">
+
+            <h3>JOVI Book Pro</h3>
+
+            <p>R$ 4.999,00</p>
+
+            <button class="comprar">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Comprar
+            </button>
+
+        </div>
+
+    </section>
+
 
     <section class="login">
 
-        <h2 id="mensagem">Bem-vindo(a)!</h2>
+        <h2>Login</h2>
+
+        <div class="inputs">
+
+            <input type="email" id="email" placeholder="Digite seu email">
+
+            <input type="password" id="senha" placeholder="Digite sua senha">
+
+            <button onclick="fazerLogin()">
+                Entrar
+            </button>
+
+        </div>
 
     </section>
 
-    <section class="filmes">
-        <div class="card">
-            <img src="https://picsum.photos/id/237/300/400">
-            <h3>Filme 1</h3>
-            <button class="favoritar">Favoritar</button>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/id/238/300/400">
-            <h3>Filme 2</h3>
-            <button class="favoritar-2">Favoritar</button>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/id/239/300/400">
-            <h3>Filme 3</h3>
-            <button class="favoritar-3">Favoritar</button>
-        </div>
-    </section>
-    <section id="favoritos-section" style="display: none;">
-        <h2>Meus Favoritos</h2>
-        <div id="lista-favoritos"></div>
-    </section>
 
-    <div id="modal-login" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Identifique-se</h2>
-            <form id="login-form">
-                <label for="usuario">Usuário:</label>
-                <input type="text" id="usuario" name="usuario" required>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-                <button type="submit">Entrar</button>
-            </form>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JOVI <span></span></h3>
+                <p>A JOVI é uma empresa líder em inovação tecnológica, dedicada a criar produtos que conectam pessoas e transformam vidas. Com foco em qualidade, desempenho e design premium, oferecemos soluções tecnológicas avançadas para o dia a dia.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p><i class="fa-solid fa-envelope"></i> contato@jovitech.com</p>
+                <p><i class="fa-solid fa-phone"></i> (11) 9999-9999</p>
+                <p><i class="fa-solid fa-map-marker-alt"></i> São Paulo, Brasil</p>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <p>© 2026 JOVI Tech - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-    <script src="Script/script.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
